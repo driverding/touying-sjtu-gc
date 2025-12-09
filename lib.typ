@@ -158,7 +158,7 @@
       grid(
         columns: (75%, 25%),
         align(left + horizon, utils.display-current-heading(depth: self.slide-level, style: auto)),
-        align(right + horizon, image("vi/sjtu-vi-sjtugate.png", height: 0.9cm)),
+        align(right + horizon, image("vi/gc-vi-lbbuilding.png", height: 0.9cm)),
       ),
       align(center + horizon, line(length: 100%, stroke: (paint: self.colors.primary, thickness: 1.5pt))),
     )
@@ -170,7 +170,7 @@
       grid(
         columns: (75%, 25%),
         align(left + horizon, utils.display-current-heading(depth: self.slide-level, style: auto)),
-        align(right + horizon, image("vi/sjtu-vi-sjtugate.png")),
+        align(right + horizon, image("vi/gc-vi-lbbuilding.png")),
       ),
       align(center + horizon, line(length: 100%, stroke: (paint: self.colors.primary, thickness: 1.5pt))),
     )
@@ -257,7 +257,7 @@
   ..args,
 ) = touying-slide-wrapper(self => {
   self = utils.merge-dicts(self, config, config-common(freeze-slide-counter: true), config-page(
-    header: align(right + horizon, block(inset: (right: 0.3em, top: 0.3em), image("vi/sjtu-vi-logo.png"))),
+    header: align(right + horizon, block(inset: (right: 0.3em, top: 0.3em), image("vi/gc-vi-logo.png"))),
     margin: (top: 3.5em, bottom: 1.5em, x: 2em),
   ))
   let info = self.info + args.named()
@@ -325,7 +325,7 @@
   let body = {
     set par(leading: 1.6em)
     set align(left + bottom)
-    set page(background: align(left, image("vi/sjtu-vi-sjtuphoto.jpg")))
+    set page(background: align(left, image("vi/gc-vi-gcphoto.jpg")))
     line(length: 100%, stroke: (paint: self.colors.neutral-light, thickness: 1.5pt))
     v(-1.15em)
     block(fill: self.colors.primary, width: 100%, {
@@ -350,7 +350,7 @@
           ),
       )
       grid(
-        columns: (65%, 35%),
+        columns: (50%, 45%),
         block({
           set text(size: 1.1em, fill: self.colors.neutral-light, weight: "semibold")
           if info.author != none {
@@ -365,7 +365,7 @@
           }
           v(0.5em)
         }),
-        align(right, block(inset: (x: 2em), image("vi/sjtu-vi-logo-white.png"))),
+        align(right, block(image("vi/gc-vi-logo-white.png", height: 2cm))),
       )
       v(2em)
     })
@@ -528,7 +528,7 @@
       grid(
         columns: (1fr, 35%),
         align(left + horizon, text(size: 1.9em, utils.display-current-heading(depth: self.slide-level, style: auto))),
-        align(right + horizon, image("vi/sjtu-vi-sjtugate.png", height: 1.5cm)),
+        align(right + horizon, image("vi/gc-vi-lbbuilding.png", height: 1.5cm)),
       ),
       v(-2cm),
       align(center + horizon, line(length: 100%, stroke: (paint: self.colors.primary, thickness: 1.5pt))),
@@ -606,7 +606,7 @@
     block(width: 80%, grid(
       columns: (40%, 1fr),
       column-gutter: 0pt,
-      image("vi/sjtu-vi-logo-ud.png"), body,
+      image("vi/gc-vi-logo-ud.png"), body,
     ))
   }
   touying-slide(self: self, config: config, align(horizon + center, body))
@@ -620,7 +620,7 @@
   ))
   set text(fill: self.colors.primary, size: 1.75em, weight: "bold")
   let body = {
-    set page(background: align(left, image("vi/sjtu-vi-end.png")))
+    set page(background: align(left, image("vi/gc-vi-end.png")))
     v(3.6em)
     body
   }
@@ -698,7 +698,7 @@
   ),
   footer: none,
   footer-right: context utils.slide-counter.display() + " / " + utils.last-slide-number,
-  primary: rgb("#C9141E"), //#A51F38
+  primary: rgb("#003263"), //#A51F38
   alpha: 40%,
   subslide-preamble: none,
   ..args,
