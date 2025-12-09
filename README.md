@@ -1,3 +1,11 @@
+# 上海交通大学 Touying 幻灯片主题，GC风味 (Touying Slide Theme for SJTU, GC flavoured)
+
+换图，换色。
+
+![Thumbnail of the project](https://github.com/driverding/touying-sjtu-gc/blob/main/thumbnail.png)
+
+以下为原README，感谢tzhTaylor的工作。
+
 # 上海交通大学 Touying 幻灯片主题 (Touying Slide Theme for SJTU)
 
 本模板基于 Touying [Dewdrop](https://github.com/touying-typ/touying/blob/main/themes/dewdrop.typ) 主题开发。
